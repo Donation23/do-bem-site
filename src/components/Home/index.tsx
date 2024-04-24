@@ -13,7 +13,9 @@ export default function HomePage() {
       <S.Wrapper>
         <S.Hero id="home-section">
           <S.Title>
-            <S.Headline>Clube Inovador</S.Headline>
+            <S.Headline>
+              <S.BoldTextBlue>Clube de Descontos</S.BoldTextBlue>
+            </S.Headline>
             <S.Subheadline>
               Do bem app conecta doadores, ONGs e empresas. Por meio de um clube
               de benefícios. Oferecemos cupons de desconto aos usuários que são
@@ -27,7 +29,7 @@ export default function HomePage() {
                 width="360"
                 height="50"
                 fontSize="22"
-                colorType="green"
+                colorType="blue"
                 onClick={handleSubmit}
                 submit={true}
               />
@@ -42,65 +44,83 @@ export default function HomePage() {
             />
           </S.LogoHero>
         </S.Hero>
-        <S.NGOSection id="ngo-section">
-          <S.NGOHeadline>ONG&apos;s Apoiadas</S.NGOHeadline>
-          <S.NGOSubheadline>
-            Viva uma nova experiência ajudando Projetos e ainda recebendo
-            ofertas de empresas
-          </S.NGOSubheadline>
-          <S.ImageSection>
-            <Image
-              src="./ngo1.png"
-              width={180}
-              height={185}
-              alt="Picture of the author"
-              style={{
-                borderRadius: "100%",
-                boxShadow: "0 0 25px #ccc",
-              }}
-            />
-          </S.ImageSection>
-          <S.ButtonSection>
-            <Button
-              label="Experiência exclusiva"
-              width="360"
-              height="50"
-              fontSize="22"
-              colorType="green"
-              onClick={handleSubmit}
-              submit={true}
-            />
-          </S.ButtonSection>
-        </S.NGOSection>
         <S.CompaniesSection id="companies-sections">
-          <S.CompaniesHeadline>Empresas Apoiadas</S.CompaniesHeadline>
+          <S.CompaniesHeadline>
+            <S.BoldTextBlue>Empresas Apoiadas</S.BoldTextBlue>
+          </S.CompaniesHeadline>
           <S.CompaniesSubheadline>
             Economize dinheiro com nossas ofertas de empresas parceiras
           </S.CompaniesSubheadline>
-          <S.ImageSection>
-            <Image
-              src="./company1.png"
-              width={180}
-              height={185}
-              alt="Picture of the author"
-              style={{
-                borderRadius: "100%",
-                boxShadow: "0 0 25px #ccc",
-              }}
-            />
-          </S.ImageSection>
+          <S.ImageList>
+            <S.ImageSection>
+              <Image
+                src="./company1.png"
+                width={180}
+                height={180}
+                alt="Picture of the author"
+                style={{
+                  borderRadius: "100%",
+                  boxShadow: "0 0 25px #ccc",
+                }}
+              />
+            </S.ImageSection>
+            <S.ImageSection>
+              <Image
+                src="./company2.png"
+                width={180}
+                height={180}
+                alt="Picture of the author"
+                style={{
+                  borderRadius: "100%",
+                  boxShadow: "0 0 25px #ccc",
+                }}
+              />
+            </S.ImageSection>
+          </S.ImageList>
           <S.ButtonSection>
             <Button
               label="Quero economizar!"
               width="360"
               height="50"
               fontSize="22"
-              colorType="green"
+              colorType="blue"
               onClick={handleSubmit}
               submit={true}
             />
           </S.ButtonSection>
         </S.CompaniesSection>
+        <S.NGOSection id="ngo-section">
+          <S.NGOHeadline><S.BoldTextBlue>ONGs Apoiadas</S.BoldTextBlue></S.NGOHeadline>
+          <S.NGOSubheadline>
+            Receba ofertas, economize e ainda
+            apoie projetos sociais
+          </S.NGOSubheadline>
+          <S.ImageList>
+            <S.ImageSection>
+              <Image
+                src="./ngo.png"
+                width={180}
+                height={185}
+                alt="Picture of the author"
+                style={{
+                  borderRadius: "100%",
+                  boxShadow: "0 0 25px #ccc",
+                }}
+              />
+            </S.ImageSection>
+          </S.ImageList>
+          <S.ButtonSection>
+            <Button
+              label="Economize com propósito"
+              width="360"
+              height="50"
+              fontSize="22"
+              colorType="blue"
+              onClick={handleSubmit}
+              submit={true}
+            />
+          </S.ButtonSection>
+        </S.NGOSection>
       </S.Wrapper>
     </>
   );
