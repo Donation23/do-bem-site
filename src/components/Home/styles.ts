@@ -58,8 +58,14 @@ export const NGOSubheadline = styled.span`
   font-size: 20px;
 `;
 
-export const ImageSection = styled.div`
+export const ImageList = styled.div`
+  display: flex;
+  flex-direction: row;
   margin: 100px 0 70px 0;
+  gap: 80px;
+`;
+
+export const ImageSection = styled.div`
 
   border-radius: 100%;
   box-shadow: 0 0 50px #ccc;
@@ -87,4 +93,14 @@ export const CompaniesSubheadline = styled.span`
   max-width: 1100px;
 
   font-size: 20px;
+`;
+
+export const BoldTextBlue = styled.span`
+  font-weight: bold;
+
+  color: rgba(65, 157, 227, 0.83);
+`;
+
+export const TextBlue = styled.span`
+  color: rgba(65, 157, 227, 0.83);
 `;
