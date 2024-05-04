@@ -1,3 +1,4 @@
+import { maxWitdhDevice } from "@/styles/GlobalStyles";
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
@@ -19,6 +20,14 @@ export const Footer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @media ${maxWitdhDevice.mobileL} {
+    flex-direction: column;
+
+    justify-content: space-around;
+
+    height: 350px;
+  }
 `;
 
 export const BoldText = styled.span`

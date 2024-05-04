@@ -7,12 +7,14 @@ export default function Header() {
     <>
       <S.Wrapper>
         <S.Header>
-          <Image
-            src="./logo-header.png"
-            width={45}
-            height={39}
-            alt="Picture of the author"
-          />
+          <S.LogoImage>
+            <Image
+              src="./logo-header.png"
+              width={45}
+              height={39}
+              alt="Picture of the author"
+            />
+          </S.LogoImage>
           <S.Navbar>
             <S.NavbarItem>
               <S.Link href="#home-section">Início</S.Link>

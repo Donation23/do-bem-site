@@ -1,3 +1,4 @@
+import { maxWitdhDevice } from "@/styles/GlobalStyles";
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
@@ -17,15 +18,29 @@ export const Header = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @media ${maxWitdhDevice.mobileL} {
+    height: 65px;
+
+    justify-content: center;
+  }
 `;
 
-export const Logo = styled.img``;
+export const LogoImage = styled.div`
+  @media ${maxWitdhDevice.mobileL} {
+    margin: 7px 0 0 0;
+  }
+`;
 
 export const Navbar = styled.ul`
   list-style-type: none;
 
   display: flex;
   flex-direction: row;
+
+  @media ${maxWitdhDevice.mobileL} {
+    display: none;
+  }
 `;
 
 export const NavbarItem = styled.li`
