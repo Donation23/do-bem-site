@@ -91,6 +91,8 @@ export default function HomePage() {
           <S.ButtonSection>
             <Button
               label="Quero economizar!"
+              width="360"
+              height="50"
               widthMobile = "280"
               heightMobile = "42"
               fontSize="22"
@@ -124,6 +126,8 @@ export default function HomePage() {
           <S.ButtonSection>
             <Button
               label="Economize com propósito"
+              width="360"
+              height="50"
               widthMobile = "280"
               heightMobile = "42"
               fontSize="22"
