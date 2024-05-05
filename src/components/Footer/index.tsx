@@ -11,12 +11,6 @@ export default function Footer() {
     <>
       <S.Wrapper>
         <S.Footer>
-          <Image
-            src="./logo_inova.png"
-            width={200}
-            height={62}
-            alt="Picture of the author"
-          />
           <S.Section >
             <S.BoldText>Junte-se ao nosso clube</S.BoldText>
             <S.SocialMedia onClick={handleSubmit}>
@@ -29,6 +23,12 @@ export default function Footer() {
               <S.SocialMediaText>{INSTAGRAM_NAME}</S.SocialMediaText>
             </S.SocialMedia>
           </S.Section>
+          <Image
+            src="./logo_inova.png"
+            width={200}
+            height={62}
+            alt="Picture of the author"
+          />
         </S.Footer>
       </S.Wrapper>
     </>

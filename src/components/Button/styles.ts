@@ -1,11 +1,15 @@
+import { maxWitdhDevice } from "@/styles/GlobalStyles";
 import mainColors from "@/styles/mainColors";
 import styled, {css} from "styled-components";
 
 type Props = {
   width: string;
   height: string;
+  widthMobile: string;
+  heightMobile: string;
   colorType: ButtonSize;
   fontSize: string;
+  fontSizeMobile: string;
 };
 
 const colorsType = {
@@ -79,7 +83,7 @@ export const Wrapper = styled.button<Props>`
   width: ${(props) => props.width}px;
   height: ${(props) => props.height}px;
 
-  font-size: 15px;
+  font-size: ${(props) => props.fontSize}px;
   font-weight: 600;
 
   span,
@@ -100,5 +104,17 @@ export const Wrapper = styled.button<Props>`
 
   img:hover {
     opacity: 50%;
+  }
+
+  @media ${maxWitdhDevice.mobileL} {
+    width: ${(props) => props.widthMobile}px;
+    height: ${(props) => props.heightMobile}px;
+
+    font-size: ${(props) => props.fontSizeMobile}px;
+    
+    span,
+    a {
+      font-size: ${(props) => props.fontSizeMobile}px;
+    }
   }
 `;

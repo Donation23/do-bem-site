@@ -12,7 +12,7 @@ export default function HomePage() {
     <>
       <S.Wrapper>
         <S.Hero id="home-section">
-          <S.Title>
+          <S.HeroSection>
             <S.Headline>
               <S.BoldTextBlue>Clube de Descontos</S.BoldTextBlue>
             </S.Headline>
@@ -28,13 +28,24 @@ export default function HomePage() {
                 label="Garanta seu desconto!"
                 width="360"
                 height="50"
+                widthMobile = "280"
+                heightMobile = "42"
                 fontSize="22"
+                fontSizeMobile = '18'
                 colorType="blue"
                 onClick={handleSubmit}
                 submit={true}
               />
             </S.ButtonSection>
-          </S.Title>
+          </S.HeroSection>
+          <S.LogoHeroMobile>
+            <Image
+              src="./logo-hero.png"
+              width={260}
+              height={127}
+              alt="Picture of the author"
+            />
+          </S.LogoHeroMobile>
           <S.LogoHero>
             <Image
               src="./logo-hero.png"
@@ -82,7 +93,10 @@ export default function HomePage() {
               label="Quero economizar!"
               width="360"
               height="50"
+              widthMobile = "280"
+              heightMobile = "42"
               fontSize="22"
+              fontSizeMobile = '18'
               colorType="blue"
               onClick={handleSubmit}
               submit={true}
@@ -114,7 +128,10 @@ export default function HomePage() {
               label="Economize com propósito"
               width="360"
               height="50"
+              widthMobile = "280"
+              heightMobile = "42"
               fontSize="22"
+              fontSizeMobile = '18'
               colorType="blue"
               onClick={handleSubmit}
               submit={true}
